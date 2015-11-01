@@ -39,9 +39,9 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="people.html">People</a></li>
+            <li><a href="people.html">People</a></li>
 	    <li><a href="publications.html">Publications</a></li>
-	    <li><a href="software.html">Software/Data</a></li>
+	    <li class="active"><a href="software.html">Software/Data</a></li>
 	    <li><a href="openings.html">Join Us</a></li>
 	    <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -51,54 +51,90 @@
 
     
     <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+	  <h2>Software</h2>
+	</div>
+      </div> <!-- /row -->
+
 
       <div class="row">
-        <div class="col-xs-6 col-md-4">
-	      <p>
-		<img src="img/mcvicker_headshot_sq.jpg" class="img-circle img-responsive">
-	      </p>
-        </div><!--/.col-xs-8-->
+        <div class="col-sm-6 col-xs-12">
+	  <h3>bkgd</h3>
 	
-        <div class="col-md-6 col-xs-12">
-	  <h2>Graham McVicker</h2>
-	  <h4>Principal Investigator</h4>
 	  <p>
-	  Graham received his B.Sc. in Computer Science from the
-	  <a href="https://www.cs.ubc.ca/">University of British Columbia</a> and then worked on
-	  the <a href="http://www.ensembl.org/index.html">Ensembl Genome Browser</a> at
-	  the <a href="http://www.ebi.ac.uk/">European
-	  Bioinformatics Institute</a> for several years. Graham then did his
-	  Ph.D. with <a href="http://www.phrap.org/">Phil Green</a> at the
-	  <a href="http://www.gs.washington.edu/">University of
-	  Washington</a> where he studied how mutation and selection shape
-          human genetic variation. In his postdoctoral research
-          with <a href="http://pritchardlab.stanford.edu/home.html">Jonathan Pritchard</a>
-	  (initially at the <a href="https://genes.uchicago.edu/">University of Chicago</a>
-	  before moving to <a href="http://med.stanford.edu/genetics.html">Stanford</a>)
-	  Graham studied how human genetic variation affects chromatin state.
-	  Since January 2016, Graham has been an Assistant Professor in the Laboratory of Genetics
-	  and the Integrative Biology Laboratory at the Salk Institute.
+	    bkgd is a program for calculating <em>B</em> values across the
+	    genome. A <em>B</em> value is an estimate of the effect of
+	    background selection at a given site in the genome, given
+	    the recombination rate and density of sites under
+	    purifying selection.
 	  </p>
-	  <p><a href="doc/mcvicker_cv.pdf">cv</a> | <span class="salkemail" user="gmcvicker"></span></p>
+	  <p>
+	    <a href="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000471" class="btn-primary btn-sm active" role="button">Paper</a>
+
+	    <a href="https://github.com/gmcvicker/bkgd" class="btn-primary btn-sm active" role="button">GitHub</a>
+	  </p>
+	</div>
+      
+	<div class="col-sm-6 col-xs-12">
+	  <h3>WASP</h3>
+	  <p>
+	    WASP is a software package for unbiased allele-specific read
+	    mapping and molecular QTL discovery written by Bryce van de
+	    Geijn and Graham McVicker.
+	  </p>
+	  <p>
+	    <a href="http://www.nature.com/nmeth/journal/v12/n11/full/nmeth.3582.html" class="btn-primary btn-sm active">Paper</a>
+	    <a href="https://github.com/bmvdgeijn/WASP" class="btn-primary btn-sm active">GitHub</a>
+	  </p>
 	</div>
       </div> <!-- /row -->
 
-        <div class="col-xs-6 col-md-4">
+      <div class="row">
+	<div class="col-sm-6 col-xs-12">
+	  <h3>genome</h3>
 	  <p>
-	    <!-- <span class="glyphicon bigger glyphicon-user"></span> -->
-	    <img src="img/empty_headshot_sq.jpg" class="img-circle img-responsive">
+	    <a href="https://github.com/gmcvicker/genome">genome</a> is a
+	    python library for working with genomics data.
+	    It contains code for reading / writing HDF5 files that is based loosely on <a href="http://pmgenomics.ca/hoffmanlab/">Michael Hoffman</a>'s 
+	    <a href="http://pmgenomics.ca/hoffmanlab/proj/genomedata/">genomedata</a> format.
 	  </p>
-        </div><!--/.col-xs-8-->
+	  <p>
+	    <a href="https://github.com/gmcvicker/genome" class="btn-primary btn-sm active">GitHub</a>
+	  </p>
+	</div>
 	
-        <div class="col-md-6 col-xs-12">
-	  <h2>Join Us!</h2>
-	  <p>We are actively looking for talented individuals to join our team!</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-
+	<div class="col-sm-6 col-xs-12">
+	  <h3>draw_genes</h3>
+	  <p>
+	    draw_genes is a program for plotting genomics data that is in
+	    HDF5 format. This code was used to generate figures
+	    for several papers including panels B &amp; C of
+	    <a href="http://www.plosgenetics.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pgen.1003036.g003&representation=PNG_M">this
+	    figure</a>; panel D
+	    of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3947669/figure/F1/">this
+	    figure</a>; and panel B
+	    of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3947669/figure/F4/">this
+	    figure</a>.
+	  </p>
+	  <p>
+	     <a href="https://github.com/gmcvicker/draw_genes" class="btn-primary btn-sm active">GitHub</a>
+	  </p>
 	</div>
       </div> <!-- /row -->
 
-
+      <div class="row">
+	<div class="col-sm-6 col-xs-12">
+	  <h3>check_fastq</h3>
+	  <p>
+	   check_fastq is a tool for checking and repairing fastq files.
+	  </p>
+	  <p>
+	    <a href="https://github.com/gmcvicker/check_fastq" class="btn-primary btn-sm active">GitHub</a>
+	    </p>
+	</div>
+	
+      </div> <!-- /row -->
       
     </div><!--/.container-->
 
