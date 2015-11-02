@@ -38,10 +38,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="people.html">People</a></li>
 	    <li><a href="publications.html">Publications</a></li>
-	    <li><a href="software.html">Software/Data</a></li>
+	    <li class="active"><a href="software.html">Software/Data</a></li>
 	    <li><a href="openings.html">Join Us</a></li>
 	    <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -53,69 +53,89 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
+	  <h2>Software</h2>
+	</div>
+      </div> <!-- /row -->
+
+
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+	  <h3>bkgd</h3>
+	
 	  <p>
-	    <!-- bkgd image at top -->
-	    <img src="img/salk-media-package-7-crop.jpg" class="img-responsive">
+	    bkgd is a program for calculating <em>B</em> values across the
+	    genome. A <em>B</em> value is an estimate of the effect of
+	    background selection at a given site in the genome, given
+	    the recombination rate and density of sites under
+	    purifying selection.
+	  </p>
+	  <p>
+	    <a href="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000471" class="btn-primary btn-sm active" role="button">Paper</a>
+
+	    <a href="https://github.com/gmcvicker/bkgd" class="btn-primary btn-sm active" role="button">GitHub</a>
+	  </p>
+	</div>
+      
+	<div class="col-sm-6 col-xs-12">
+	  <h3>WASP</h3>
+	  <p>
+	    WASP is a software package for unbiased allele-specific read
+	    mapping and molecular QTL discovery written by Bryce van de
+	    Geijn and Graham McVicker.
+	  </p>
+	  <p>
+	    <a href="http://www.nature.com/nmeth/journal/v12/n11/full/nmeth.3582.html" class="btn-primary btn-sm active">Paper</a>
+	    <a href="https://github.com/bmvdgeijn/WASP" class="btn-primary btn-sm active">GitHub</a>
 	  </p>
 	</div>
       </div> <!-- /row -->
 
       <div class="row">
-        <div class="col-xs-12">
-	   <h2>Welcome to the McVicker Lab</h2>
-	      <p>
-	      The McVicker Laboratory is located at the <a href="http://www.salk.edu">Salk Institute for Biological Studies</a>
-	      in beautiful <a href="https://en.wikipedia.org/wiki/La_Jolla">La Jolla, California</a>. We are part of the
-	      <a href="http://www.salk.edu/faculty/laboratory_of_genetics.html">Laboratory of Genetics</a> and the
-	      <a href="http://www.salk.edu/faculty/integrative_biology_laboratory.html">Integrative Biology Laboratory</a>.
-	      We are also part of the <a href="http://bioinformatics.ucsd.edu/">Bioinformatics and Systems Biology</a>
-	      program at <a href="http://ucsd.edu">UCSD</a>.
-	      </p>
-        </div><!--/.col-xs-8-->
-
-        <div class="col-md-8 col-xs-12">
-	      <h2>Research</h2>
-	    
-	      <p> <img src="img/molecular_qtl_sm.jpg"
-	      class="img-responsive img-thumbnail" align="right"> Our
-	      laboratory studies human genetic variation and
-	      chromatin. Chromatin is critical for correct cell-type
-	      specific gene regulation, and its disregulation is
-	      associated with many human diseases including cancer. To
-	      understand how chromatin state and organization are
-	      encoded by the human genome, we use naturally occurring
-	      genetic variation to discover sequence variants that
-	      disrupt chromatin function. In much of our research, we
-	      develop of sophisticated computational and statistical
-	      methods so that we can extract subtle signals from noisy
-	      experimental data.  </p>
-
-	      <p>
-		Currently, we are using human genetic variation to
-		answer three broad questions. Which sequence elements
-		and nuclear factors specify chromatin state and
-		organization? How are cell-type specific chromatin
-		organization and gene regulation encoded by the
-		genome? How does regulatory variation in
-		immune cells affect the basic functions of our immune
-		system and our susceptibility to disease?
-	      </p>
+	<div class="col-sm-6 col-xs-12">
+	  <h3>genome</h3>
+	  <p>
+	    <a href="https://github.com/gmcvicker/genome">genome</a> is a
+	    python library for working with genomics data.
+	    It contains code for reading / writing HDF5 files that is based loosely on <a href="http://pmgenomics.ca/hoffmanlab/">Michael Hoffman</a>'s 
+	    <a href="http://pmgenomics.ca/hoffmanlab/proj/genomedata/">genomedata</a> format.
+	  </p>
+	  <p>
+	    <a href="https://github.com/gmcvicker/genome" class="btn-primary btn-sm active">GitHub</a>
+	  </p>
 	</div>
-	    
-        <div class="col-xs-12 col-sm-6 col-md-4">
-              <h2>News</h2>
-	      <p>The lab opens its doors in January 2016!
-	      <p><a href="http://www.salk.edu/news/pressrelease_details.php?press_id=2086">Press Release</a>
-	      </p>
-	    </div>
-	    
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <h2>Join Us</h2>
-              <p>We are looking for talented individuals to join our team!</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-          </div><!--/row-->
+	
+	<div class="col-sm-6 col-xs-12">
+	  <h3>draw_genes</h3>
+	  <p>
+	    draw_genes is a program for plotting genomics data that is in
+	    HDF5 format. This code was used to generate figures
+	    for several papers including panels B &amp; C of
+	    <a href="http://www.plosgenetics.org/article/fetchObject.action?uri=info:doi/10.1371/journal.pgen.1003036.g003&representation=PNG_M">this
+	    figure</a>; panel D
+	    of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3947669/figure/F1/">this
+	    figure</a>; and panel B
+	    of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3947669/figure/F4/">this
+	    figure</a>.
+	  </p>
+	  <p>
+	     <a href="https://github.com/gmcvicker/draw_genes" class="btn-primary btn-sm active">GitHub</a>
+	  </p>
+	</div>
+      </div> <!-- /row -->
 
+      <div class="row">
+	<div class="col-sm-6 col-xs-12">
+	  <h3>check_fastq</h3>
+	  <p>
+	   check_fastq is a tool for checking and repairing fastq files.
+	  </p>
+	  <p>
+	    <a href="https://github.com/gmcvicker/check_fastq" class="btn-primary btn-sm active">GitHub</a>
+	    </p>
+	</div>
+	
+      </div> <!-- /row -->
+      
     </div><!--/.container-->
 
     <!-- FOOTER -->
