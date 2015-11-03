@@ -38,8 +38,8 @@ footer {
 
 .container {
     max-width: 1024px;
-
 }
+
 
 /* print a salk email address for a username, helps avoid spam */
 span.salkemail:after { content: attr(user)"\40salk.edu"; }
