@@ -36,8 +36,13 @@ footer {
 }
 
 
+
+html,body{height:100%;}
+
 .container {
     max-width: 1024px;
+    min-height: 80%;
+    overflow: hidden;
 }
 
 
