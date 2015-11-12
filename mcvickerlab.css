@@ -51,7 +51,7 @@ span.salkemail:after { content: attr(user)"\40salk.edu"; }
 
 
 #map-container {
-    height:500px;
+    height:400px;
     /*height:100%;*/
 }
 
