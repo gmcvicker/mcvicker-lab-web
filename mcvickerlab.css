@@ -44,4 +44,20 @@ footer {
 /* print a salk email address for a username, helps avoid spam */
 span.salkemail:after { content: attr(user)"\40salk.edu"; }
 
-.glyphicon.bigger {font-size: 180px;}
+
+#map-container {
+    height:500px;
+    /*height:100%;*/
+}
+
+.maplabel {
+    color: red;
+    background-color: white;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;     
+    border: 2px solid black;
+    white-space: nowrap;
+}
