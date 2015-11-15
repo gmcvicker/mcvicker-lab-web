@@ -45,6 +45,12 @@ html,body{height:100%;}
     overflow: hidden;
 }
 
+.headshot {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 
 /* print a salk email address for a username, helps avoid spam */
 span.salkemail:after { content: attr(user)"\40salk.edu"; }
