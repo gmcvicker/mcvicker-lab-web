@@ -72,3 +72,12 @@ span.salkemail:after { content: attr(user)"\40salk.edu"; }
     border: 2px solid black;
     white-space: nowrap;
 }
+
+
+img-responsive {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
